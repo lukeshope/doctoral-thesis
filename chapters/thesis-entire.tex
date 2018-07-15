@@ -1,0 +1,74 @@
+\documentclass[12pt,newcastle]{lukesmiththesis}  % use the Newcastle Uni shield
+\usepackage{amssymb, caption, subcaption, array, booktabs, ragged2e, soul, rotating}
+\usepackage[export]{adjustbox}
+\usepackage{rotating, floatrow}
+\usepackage[breakable, theorems, skins]{tcolorbox}
+\usepackage{natbib}
+\usepackage[author={Luke Smith}]{pdfcomment}
+
+\title{Computational methods for and applications \\
+    	   of high-performance computing in \\
+          		flood simulation}
+
+\author{Luke S. Smith}
+\college{School of Engineering}
+
+\renewcommand{\submittedtext}{A thesis submitted for the degree of}
+\degree{Doctor of Philosophy (Ph.D)}
+\degreedate{July 2018}         
+
+\begin{document}
+
+% 1.5x spacing(ish)
+\baselineskip=18pt plus1pt
+
+% Table of contents depth
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Some overrides because I hate over-capping in titles
+\renewcommand*\listfigurename{List of figures}
+
+% Make the captions smaller and a bit different
+\captionsetup[figure]{labelfont={small,bf},textfont=small,justification=raggedright,labelsep=space,singlelinecheck=false}
+\captionsetup[table]{labelfont={small,bf},textfont=small,justification=raggedright,labelsep=space,singlelinecheck=false}
+
+\maketitle                 
+\include{abstract}
+\include{acknowlegements}
+\include{publications}
+\include{software}
+
+\begin{romanpages}
+\tableofcontents
+\listoftables
+\listoffigures
+\include{notation}
+\end{romanpages}
+
+%now include the files of latex for each of the chapters etc
+\include{chapter_introduction}
+\include{chapter_review}
+\include{chapter_software_methods}
+\include{chapter_validation}
+\include{chapter_effects_fluvial}
+\include{chapter_decomposition}
+\include{chapter_effects_pluvial}
+\include{chapter_soft_data}
+\include{chapter_conclusion}
+
+%now enable appendix numbering format and include any appendices
+% \appendix
+% \include{appendix1}
+% \include{appendix2}
+% \include{appendix3}
+% \include{appendix4}
+
+% Add bibliography to the contents page
+\addcontentsline{toc}{chapter}{References}
+\renewcommand{\bibname}{References}
+\bibliographystyle{agsm}  % As above
+\bibliography{../bibliography/library}           % Plain(ish) styles
+
+\end{document}
+
