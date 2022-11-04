@@ -2,7 +2,7 @@
 
 Six years of part-time pain and suffering in LaTeX form. Awarded July 2018.
 
-The generated thesis is [available as a PDF](https://lukessmith.github.io/doctoral-thesis/SmithLS_PhD_Thesis.pdf). The code for the software produced is [in the HiPIMS repository](https://github.com/lukessmith/hipims-ocl).
+The generated thesis is [available as a PDF](https://lukeshope.github.io/doctoral-thesis/SmithLS_PhD_Thesis.pdf). The code for the software produced is [in the HiPIMS repository](https://github.com/lukeshope/hipims-ocl).
 
 ## Table of contents
 ```
